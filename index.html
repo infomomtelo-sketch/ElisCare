@@ -52,6 +52,8 @@ body{
   margin-bottom:12px;
 }
 .masthead p{font-size:15px;line-height:1.55;color:#DCE7E0;max-width:44ch}
+.masthead .trainlink{margin-top:18px}
+.masthead .trainlink a{display:inline-block;background:#fff;color:var(--sage-deep);font:700 15px/1 Inter,sans-serif;padding:14px 20px;border-radius:9px;text-decoration:none}
 
 /* ---------- sections ---------- */
 .sec{
@@ -222,6 +224,11 @@ body{
   margin-top:18px;text-align:center;
 }
 .reach a{color:var(--sage-deep);font-weight:500;white-space:nowrap}
+.affil{
+  font-size:13px;line-height:1.6;color:var(--ink-soft);
+  margin-top:10px;text-align:center;
+}
+.affil a{color:var(--sage-deep)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -232,6 +239,7 @@ body{
     <p class="eyebrow">Now hiring · Fresno, CA</p>
     <h1>Come take care of people with us.</h1>
     <p>Fill this out on your phone in about two minutes. Attach your resume or certificates if you have them — if you don't, apply anyway. We train.</p>
+    <p class="trainlink"><a href="training.html">Get your training here</a></p>
   </div>
 </header>
 
@@ -269,7 +277,6 @@ body{
       <label>Best way to reach you</label>
       <div class="chips">
         <label class="chip"><input type="radio" name="Contact method" value="Text" checked><span>Text</span></label>
-        <label class="chip"><input type="radio" name="Contact method" value="Call"><span>Call</span></label>
         <label class="chip"><input type="radio" name="Contact method" value="Email"><span>Email</span></label>
       </div>
     </div>
@@ -371,6 +378,26 @@ body{
   </section>
 
   <section class="sec">
+    <h2>Training</h2>
+    <p class="hint">Tell us what training you've already done. All optional — leave blank if you're just starting out.</p>
+
+    <div class="field">
+      <label for="trainhours">Training hours completed</label>
+      <input type="number" id="trainhours" name="Training hours" placeholder="e.g. 40" min="0" inputmode="numeric">
+    </div>
+
+    <div class="field">
+      <label for="courses">Courses completed</label>
+      <input type="text" id="courses" name="Courses completed" placeholder="e.g. RCFE orientation, Dementia care, First Aid">
+    </div>
+
+    <div class="field">
+      <label for="certs">Certifications</label>
+      <input type="text" id="certs" name="Certifications" placeholder="e.g. CNA, HHA, CPR, Medication training">
+    </div>
+  </section>
+
+  <section class="sec">
     <h2>Clearances</h2>
     <p class="hint">Tap what you already have. Missing some is fine — we'll walk you through it.</p>
     <div class="chips">
@@ -404,9 +431,10 @@ body{
   <button type="submit" class="send">Send my application</button>
   <a class="alt" href="sms:+15598253038?&body=Hi%2C%20I'm%20interested%20in%20the%20caregiver%20job.%20My%20name%20is%3A%20">Text us instead</a>
 
-  <p class="reach">Questions? Text or call <a href="tel:+15598253038">559-825-3038</a> · <a href="mailto:contact@runp8.com">contact@runp8.com</a></p>
+  <p class="reach">Questions? Text <a href="sms:+15598253038">559-825-3038</a> · <a href="mailto:contact@runp8.com">contact@runp8.com</a></p>
+  <p class="affil"><a href="https://title-22.com/affiliates/">Become an affiliate</a></p>
 
-  <p class="consent">By sending this you agree we may contact you by phone, text, or email about this job. <br>[FACILITY NAME] is an equal opportunity employer.</p>
+  <p class="consent">By sending this you agree we may contact you by text or email about this job. <br>[FACILITY NAME] is an equal opportunity employer.</p>
 </form>
 </main>
 
@@ -442,5 +470,6 @@ body{
   });
 })();
 </script>
+<script src="https://tello.live/embed/0416bc517c.js" async></script>
 </body>
 </html>
